@@ -8,6 +8,6 @@ RUN npm install --registry=https://registry.npm.taobao.org
 RUN npm run build
 RUN npm prune --production
 
-EXPOSE 7001
+EXPOSE 80 7001
 
 ENTRYPOINT ["npm", "run", "start"]
